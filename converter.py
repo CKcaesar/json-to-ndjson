@@ -1,9 +1,9 @@
-import json
+# import json
 import ndjson
 
 # load from file-like objects
 with open('players_team15.json') as f:
-    data = json.load(f)
+    data = ndjson.load(f)
 
 # convert to and from objects
 # text = ndjson.dumps(data)
